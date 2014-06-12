@@ -1,0 +1,148 @@
+html {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+	font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 14px;
+	background: url("../resources/img/sample_bg_7.jpg") no-repeat fixed top left;
+	background-size: 100% auto;
+}
+
+.navbar.navbar-inverse.transparent {
+	background: rgba(60, 60, 60, 0.4) none no-repeat scroll top left;
+	border-bottom: 1px none;
+}
+
+.navbar.navbar-inverse.transparent .navbar-brand {
+	padding-top: 3px;
+	padding-bottom: 0;
+}
+.navbar.navbar-inverse.transparent a {
+	color: #DDD;	
+}
+
+.navbar.navbar-inverse.transparent li.dropdown ul.dropdown-menu {
+	background-color: rgba(150, 150, 150, 0.2);
+	border-top: none;
+}
+
+.navbar.navbar-inverse.transparent li.active > a {
+	background-color: rgba(180, 180, 180, 0.5);
+}
+
+.top-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1.primary {
+	font-size: 36px;
+	color: #FFF;
+	padding-bottom: 10px;
+}
+
+h1.secondary {
+	font-size: 24px;
+	color: #EEE;
+	padding-bottom: 10px;
+	margin-top: 1px;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.less-transparent {
+	opacity: 0.8;
+}
+
+.less-transparent:hover {
+	opacity: 1;
+}
+
+.top-content .button-panel {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.top-content .button-panel button {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px 25px;
+	opacity: 0.7;
+	font-size: 18px;
+}
+
+.top-content .button-panel button:hover {
+	opacity: 1;	
+}
+
+.white-bg-black-fg {
+	background-color: #FFF;
+	text-color: #111;
+}
+
+.mid-content {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.sub-mid-content {
+	text-align: center;
+	color: #EEE;
+	vertical-align: bottom;
+}
+
+.mid-content .sub-mid-content > img {
+	height: 36px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.mid-content .sub-mid-content > .primary {
+	font-size: 30px;
+}
+
+.mid-content .sub-mid-content > .secondary {
+	font-size: 18px;
+}
+
+.mid-content .sub-mid-content > .description {
+	margin-left: 35%;
+	margin-top: 10px;
+	margin-right: 15%;
+}
+
+.mid-content .sub-mid-content > .flow-chart {
+	margin-left: 35%;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.icon-panel {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.icon-panel .img {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.bottom-content .col-md-4.featured-trip {
+	padding: 10px 10px;
+}
+
+.bottom-content .col-md-4.featured-trip > img {
+	width: 100%;
+}
+
+@media (min-width:769px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
