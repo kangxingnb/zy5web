@@ -57,14 +57,42 @@ var checkboxModels = {
 	"dest-checkbox4": ["Seattle"],
 	"dest-checkbox5": ["Hawaii", "Caribbean", "Alaska"]
 };
-var questionAnswered = {
-	"q2": 0,
-	"q3": 0,
-	"q4": 0,
-	"q5": 0,
-	"q6": 0,
-	"q7": 0,
-	"q8": 0
+var answers = {
+	"q2": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
+	"q3": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
+	"q4": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
+	"q5": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
+	"q6": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
+	"q7": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
+	"q8": {
+		radioAnswer: "",
+		checkAnswer: {keyNum:0},
+		textAnswer: ""
+	},
 };
 var markers = {};
 var map = null;
@@ -118,27 +146,49 @@ var scrollView = function (id) {
 		}, 800);
 	}
 };
-// handle radio-button/checkbox state changes
-var handleRadioChange = function() {
-	$("label.style-radio").each( function(index) {
-		if ($(this).find("input[type='radio']").prop("checked")) {
+// handle radio-button/textbox/checkbox state changes
+var handleRadioChange = function(curQId, essential) {
+	$("#"+curQId+" label.style-radio").each( function(index) {
+		var curRadio = $(this).find("input[type='radio']");
+		if (curRadio.prop("checked")) {
 			$(this).addClass("checked-radio");
+			if (essential) {
+				answers[curQId].radioAnswer = curRadio.val();
+			}
 		}
 		else {
 			$(this).removeClass("checked-radio");
 		}
 	});
 };
-var handleCheckboxChange = function( currentBox ) {
-	if ($(currentBox).prop("checked")) {
-		$(currentBox).parent("label.style-checkbox").addClass("checked-box");
+var handleTextChange = function(curText, curQId, essential) {
+	var textVal = $(curText).val();
+	if (essential &&
+			(textVal != null)) {
+			answers[curQId].textAnswer = textVal;
+	}
+};
+var handleCheckboxChange = function(curBox, curQId, essential) {
+	if ($(curBox).prop("checked")) {
+		$(curBox).parent("label.style-checkbox").addClass("checked-box");
+		if (essential) {
+			answers[curQId].checkAnswer[$(curBox).val()] = true;
+			answers[curQId].checkAnswer.keyNum++;
+		}
 	}
 	else {
-		$(currentBox).parent("label.style-checkbox").removeClass("checked-box");
+		$(curBox).parent("label.style-checkbox").removeClass("checked-box");
+		if (essential) {
+			var textVal = $(curBox).val();
+			if (textVal in answers[curQId].checkAnswer) {
+				delete answers[curQId].checkAnswer[textVal];
+				answers[curQId].checkAnswer.keyNum--;
+			}
+		}
 	}
-	if ($(currentBox).attr("name") == "dest-option") {
-		var placesForLabel = checkboxModels[$(currentBox).attr("id")];
-		if ($(currentBox).prop("checked")) {
+	if ($(curBox).attr("name") == "dest-option") {
+		var placesForLabel = checkboxModels[$(curBox).attr("id")];
+		if ($(curBox).prop("checked")) {
 			placesForLabel.forEach( function(place) {
 				markers[place].setAnimation(google.maps.Animation.BOUNCE);
 				stopAnimationWithTimeout(markers[place]);
@@ -151,15 +201,53 @@ var handleCheckboxChange = function( currentBox ) {
 		}
 	}
 };
+var sanityCheckAnswer = function (curQId) {
+	if (curQId != "q1") {
+		return (answers[curQId].radioAnswer.length > 0 ||
+				answers[curQId].textAnswer.length > 0 ||
+				answers[curQId].checkAnswer.keyNum > 0);
+	}
+	return true;
+};
 var answerQuestion = function (curQId, nextQId, checkMarkId) {
+	// sanity check to make sure current Q has been answered;
+	// quit if check not passed
+	if (!sanityCheckAnswer(curQId)) {
+		$("#"+curQId+" .sanityCheck").css({ "display": "block"});
+		$("#"+checkMarkId).css({ "visibility": "hidden" });
+		return;
+	}
+	else {
+		$("#"+curQId+" .sanityCheck").css({ "display": "none"});
+		$("#"+checkMarkId).css({ "visibility": "visible" });
+	}
+	// handle special Q1 logic
 	if (curQId == "q1") {
 		$("#q2").css({ "display": "none"});
 	}
+	// display next Q
 	$("#"+nextQId).css({ "display": "block" });
-	$("#"+checkMarkId).css({ "visibility": "visible" });
 	if (nextQId == "q2") {
 		resizeMap();
 	}
 	// auto scroll to bottom of nextQ
 	scrollView(nextQId);
+};
+var report = function() {
+	var result = "";
+	for (question in answers) {
+		result += "Question: " + question + "; ";
+		result += "RadioAnswer: " + answers[question].radioAnswer + "; ";
+		result += "TextAnswer: " + answers[question].textAnswer + "; ";
+		result += "CheckAnswer: " + transformObjectToString(answers[question].checkAnswer) + ";";
+		result += "    ";
+	}
+	alert(result);
+};
+var transformObjectToString = function (obj) {
+	var result = "";
+	for (key in obj) {
+		result += "Key: " + key + ", Value: " + obj[key] + "; ";
+	}
+	return result;
 };

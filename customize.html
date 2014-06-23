@@ -19,7 +19,8 @@
       <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body class="customize-page">
+	<div class="mobile-bg"></div>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top transparent" role="navigation" style="position: relative !important;">
 		<div class="container">
@@ -75,7 +76,7 @@
 			<div id="q1" class="row question-answer">
 				<div class="col-sm-4">
 					<img class="nest-chat-icon" src="resources/img/nest.png">
-					<span class="thirdary">您的出行目的地是否已经确定了呢？</span>
+					<span class="thirdary">您的出行目的地是否已确定呢？</span>
 				</div>
 				<div class="col-sm-7">
 					<div class="button-panel">
@@ -95,30 +96,34 @@
 				<div class="col-sm-7">
 					<div class="button-panel">
 					<label id="dest-label1" class="style-checkbox forthary" for="dest-checkbox1">
-					<input id="dest-checkbox1" type="checkbox" name="dest-option" value="洛杉矶/圣地亚哥/旧金山/拉斯维加斯" onclick="handleCheckboxChange(this);">
+					<input id="dest-checkbox1" type="checkbox" name="dest-option" value="洛杉矶/圣地亚哥/旧金山/拉斯维加斯" onclick="handleCheckboxChange(this, 'q2', true)">
 					加州环线:洛杉矶/圣地亚哥/旧金山/拉斯维加斯</label>
 					</div>
 					<div class="button-panel">
 					<label id="dest-label2" class="style-checkbox forthary" for="dest-checkbox2">
-					<input id="dest-checkbox2" type="checkbox" name="dest-option" value="奥兰多/迈阿密/西礁岛" onclick="handleCheckboxChange(this);">
+					<input id="dest-checkbox2" type="checkbox" name="dest-option" value="奥兰多/迈阿密/西礁岛" onclick="handleCheckboxChange(this, 'q2', true)">
 					佛州娱乐汇:奥兰多/迈阿密/西礁岛</label>
 					</div>
 					<div class="button-panel">
 					<label id="dest-label3" class="style-checkbox forthary" for="dest-checkbox3">
-					<input id="dest-checkbox3" type="checkbox" name="dest-option" value="纽约/波士顿/费城/华盛顿" onclick="handleCheckboxChange(this);">
+					<input id="dest-checkbox3" type="checkbox" name="dest-option" value="纽约/波士顿/费城/华盛顿" onclick="handleCheckboxChange(this, 'q2', true)">
 					美东都市绘:纽约/波士顿/费城/华盛顿</label>
 					</div>
 					<div class="button-panel">
 					<label id="dest-label4" class="style-checkbox forthary" for="dest-checkbox4">
-					<input id="dest-checkbox4" type="checkbox" name="dest-option" value="西雅图/波特兰" onclick="handleCheckboxChange(this);">
+					<input id="dest-checkbox4" type="checkbox" name="dest-option" value="西雅图/波特兰" onclick="handleCheckboxChange(this, 'q2', true)">
 					爱上翡翠之城:西雅图/波特兰</label>
 					</div>
 					<div class="button-panel">
 					<label id="dest-label5" class="style-checkbox forthary" for="dest-checkbox5">
-					<input id="dest-checkbox5" type="checkbox" name="dest-option" value="夏威夷/加勒比/阿拉斯加" onclick="handleCheckboxChange(this);">
+					<input id="dest-checkbox5" type="checkbox" name="dest-option" value="夏威夷/加勒比/阿拉斯加" onclick="handleCheckboxChange(this, 'q2', true)">
 					海洋度假行:夏威夷/加勒比/阿拉斯加</label>
 					</div>
-					<div id="map-canvas" style="min-height: 400px;"></div>
+					<div id="map-canvas"></div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了选择至少一个出行目的地</span>
+					</div>
 					<div class="bottom-content">
 					<button type="button" class="btn btn-md btn-primary" onclick="answerQuestion('q2', 'q3', 'checkmark2')"><b>回答下一个问题吧</b></button>
 					</div>
@@ -133,6 +138,48 @@
 					<span class="thirdary">您的出发地是？</span>
 				</div>
 				<div class="col-sm-7">
+					<div class="button-panel">
+						<form>
+						<label class="style-radio forthary" for="origin-radio1">
+						<input id="origin-radio1" type="radio" name="origin-group" value="北京" onclick="handleRadioChange('q3', true)">
+						北京</label>
+						<label class="style-radio forthary" for="origin-radio2">
+						<input id="origin-radio2" type="radio" name="origin-group" value="上海" onclick="handleRadioChange('q3', true)">
+						上海</label>
+						<label class="style-radio forthary" for="origin-radio3">
+						<input id="origin-radio3" type="radio" name="origin-group" value="西安" onclick="handleRadioChange('q3', true)">
+						西安</label>
+						<label class="style-radio forthary" for="origin-radio4">
+						<input id="origin-radio4" type="radio" name="origin-group" value="广州" onclick="handleRadioChange('q3', true)">
+						广州</label>
+						<label class="style-radio forthary" for="origin-radio5">
+						<input id="origin-radio5" type="radio" name="origin-group" value="深圳" onclick="handleRadioChange('q3', true)">
+						深圳</label>
+						<br>
+						<label class="style-radio forthary" for="origin-radio6">
+						<input id="origin-radio6" type="radio" name="origin-group" value="成都" onclick="handleRadioChange('q3', true)">
+						成都</label>
+						<label class="style-radio forthary" for="origin-radio7">
+						<input id="origin-radio7" type="radio" name="origin-group" value="重庆" onclick="handleRadioChange('q3', true)">
+						重庆</label>
+						<label class="style-radio forthary" for="origin-radio8">
+						<input id="origin-radio8" type="radio" name="origin-group" value="杭州" onclick="handleRadioChange('q3', true)">
+						杭州</label>
+						<label class="style-radio forthary" for="origin-radio9">
+						<input id="origin-radio9" type="radio" name="origin-group" value="南京" onclick="handleRadioChange('q3', true)">
+						南京</label>
+						<label class="style-radio forthary" for="origin-radio10">
+						<input id="origin-radio10" type="radio" name="origin-group" value="武汉" onclick="handleRadioChange('q3', true)">
+						武汉</label>
+						<br>
+						<span class="forthary">没找到您的出发城市？在这里输入吧: </span>
+						<input type="text" style="width: 100px; color: #000;" onblur="handleTextChange(this, 'q3', true)">
+						</form>
+					</div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了选择您的出发地</span>
+					</div>
 					<div class="bottom-content">
 					<button type="button" class="btn btn-md btn-primary" onclick="answerQuestion('q3', 'q4', 'checkmark3')"><b>回答下一个问题吧</b></button>
 					</div>
@@ -149,8 +196,12 @@
 				<div class="col-sm-7">
 					<div class="button-panel">
 					<span class="thirdary">预计于</span>
-					<input id="datepicker1" type="text" style="width: 100px; color: #000;">
+					<input id="datepicker1" type="text" style="width: 100px; color: #000;" onchange="handleTextChange(this, 'q4', true)">
 					<span class="thirdary">出发</span>
+					</div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了选择您的出发时间</span>
 					</div>
 					<div class="bottom-content">
 					<button type="button" class="btn btn-md btn-primary" onclick="answerQuestion('q4', 'q5', 'checkmark4')"><b>回答下一个问题吧</b></button>
@@ -167,21 +218,25 @@
 				</div>
 				<div class="col-sm-7">
 					<div class="button-panel">
-					<form>
-					<label class="style-radio forthary" for="day-radio1">
-					<input id="day-radio1" type="radio" name="day-group" value="少于7天" onclick="handleRadioChange();">
-					少于7天</label>
-					<label class="style-radio forthary" for="day-radio2">
-					<input id="day-radio2" type="radio" name="day-group" value="7-10天" onclick="handleRadioChange();">
-					7-10天</label>
-					<br>
-					<label class="style-radio forthary" for="day-radio3">
-					<input id="day-radio3" type="radio" name="day-group" value="11-14天" onclick="handleRadioChange();">
-					11-14天</label>
-					<label class="style-radio forthary" for="day-radio4">
-					<input id="day-radio4" type="radio" name="day-group" value="多于14天" onclick="handleRadioChange();">
-					多于14天</label>
-					</form>
+						<form>
+						<label class="style-radio forthary" for="day-radio1">
+						<input id="day-radio1" type="radio" name="day-group" value="少于7天" onclick="handleRadioChange('q5', true)">
+						少于7天</label>
+						<label class="style-radio forthary" for="day-radio2">
+						<input id="day-radio2" type="radio" name="day-group" value="7-10天" onclick="handleRadioChange('q5', true)">
+						7-10天</label>
+						<br>
+						<label class="style-radio forthary" for="day-radio3">
+						<input id="day-radio3" type="radio" name="day-group" value="11-14天" onclick="handleRadioChange('q5', true)">
+						11-14天</label>
+						<label class="style-radio forthary" for="day-radio4">
+						<input id="day-radio4" type="radio" name="day-group" value="多于14天" onclick="handleRadioChange('q5', true)">
+						多于14天</label>
+						</form>
+					</div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了选择您的计划出行天数</span>
 					</div>
 					<div class="bottom-content">
 					<button type="button" class="btn btn-md btn-primary" onclick="answerQuestion('q5', 'q6', 'checkmark5')"><b>回答下一个问题吧</b></button>
@@ -200,22 +255,26 @@
 					<div class="button-panel">
 					<form>
 					<label class="style-radio forthary" for="ppl-radio1">
-					<input id="ppl-radio1" type="radio" name="ppl-group" value="1-2人" onclick="handleRadioChange();">
+					<input id="ppl-radio1" type="radio" name="ppl-group" value="1-2人" onclick="handleRadioChange('q6', true)">
 					1-2人</label>
 					<label class="style-radio forthary" for="ppl-radio2">
-					<input id="ppl-radio2" type="radio" name="ppl-group" value="3-4人" onclick="handleRadioChange();">
+					<input id="ppl-radio2" type="radio" name="ppl-group" value="3-4人" onclick="handleRadioChange('q6', true)">
 					3-4人</label>
 					<label class="style-radio forthary" for="ppl-radio3">
-					<input id="ppl-radio3" type="radio" name="ppl-group" value="5人及以上" onclick="handleRadioChange()">
+					<input id="ppl-radio3" type="radio" name="ppl-group" value="5人及以上" onclick="handleRadioChange('q6', true)">
 					5人及以上</label>
 					<br>
 					<label class="style-checkbox forthary" for="ppl-checkbox1">
-					<input id="ppl-checkbox1" type="checkbox" name="ppl-option" value="同行有60岁以上的老人" onclick="handleCheckboxChange(this);">
+					<input id="ppl-checkbox1" type="checkbox" name="ppl-option" value="同行有60岁以上的老人" onclick="handleCheckboxChange(this, 'q6', true)">
 					同行有60岁以上的老人</label>
 					<label class="style-checkbox forthary" for="ppl-checkbox2">
-					<input id="ppl-checkbox2" type="checkbox" name="ppl-option" value="同行有不到12岁的儿童" onclick="handleCheckboxChange(this);">
+					<input id="ppl-checkbox2" type="checkbox" name="ppl-option" value="同行有不到12岁的儿童" onclick="handleCheckboxChange(this, 'q6', true)">
 					同行有不到12岁的儿童</label>
 					</form>
+					</div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了选择出行人数</span>
 					</div>
 					<div class="bottom-content">
 					<button type="button" class="btn btn-md btn-primary" onclick="answerQuestion('q6', 'q7', 'checkmark6')"><b>回答下一个问题吧</b></button>
@@ -233,36 +292,44 @@
 				<div class="col-sm-7">
 					<div class="button-panel">
 					<label class="style-checkbox forthary" for="act-checkbox1">
-					<input id="act-checkbox1" type="checkbox" name="act-option" value="自然风光" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox1" type="checkbox" name="act-option" value="自然风光" onclick="handleCheckboxChange(this, 'q7', true)">
 					自然风光</label>
 					<label class="style-checkbox forthary" for="act-checkbox2">
-					<input id="act-checkbox2" type="checkbox" name="act-option" value="主题公园" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox2" type="checkbox" name="act-option" value="主题公园" onclick="handleCheckboxChange(this, 'q7', true)">
 					主题公园</label>
 					<label class="style-checkbox forthary" for="act-checkbox3">
-					<input id="act-checkbox3" type="checkbox" name="act-option" value="博物展览" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox3" type="checkbox" name="act-option" value="博物展览" onclick="handleCheckboxChange(this, 'q7', true)">
 					博物展览</label>
 					</div>
 					<div class="button-panel">
 					<label class="style-checkbox forthary" for="act-checkbox4">
-					<input id="act-checkbox4" type="checkbox" name="act-option" value="体育赛事" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox4" type="checkbox" name="act-option" value="体育赛事" onclick="handleCheckboxChange(this, 'q7', true)">
 					体育赛事</label>
 					<label class="style-checkbox forthary" for="act-checkbox5">
-					<input id="act-checkbox5" type="checkbox" name="act-option" value="户外探险" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox5" type="checkbox" name="act-option" value="户外探险" onclick="handleCheckboxChange(this, 'q7', true)">
 					户外探险</label>
 					<label class="style-checkbox forthary" for="act-checkbox6">
-					<input id="act-checkbox6" type="checkbox" name="act-option" value="休闲度假" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox6" type="checkbox" name="act-option" value="休闲度假" onclick="handleCheckboxChange(this, 'q7', true)">
 					休闲度假</label>
 					</div>
 					<div class="button-panel">
 					<label class="style-checkbox forthary" for="act-checkbox7">
-					<input id="act-checkbox7" type="checkbox" name="act-option" value="特色美食" onchange="handleCheckboxChange(this);">
+					<input id="act-checkbox7" type="checkbox" name="act-option" value="特色美食" onchange="handleCheckboxChange(this, 'q7', true)">
 					特色美食</label>
 					<label class="style-checkbox forthary" for="act-checkbox8">
-					<input id="act-checkbox8" type="checkbox" name="act-option" value="购物扫货" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox8" type="checkbox" name="act-option" value="购物扫货" onclick="handleCheckboxChange(this, 'q7', true)">
 					购物扫货</label>
 					<label class="style-checkbox forthary" for="act-checkbox9">
-					<input id="act-checkbox9" type="checkbox" name="act-option" value="摄影发烧友" onclick="handleCheckboxChange(this);">
+					<input id="act-checkbox9" type="checkbox" name="act-option" value="摄影发烧友" onclick="handleCheckboxChange(this, 'q7', true)">
 					摄影发烧友</label>
+					</div>
+					<div class="button-panel">
+						<span class="forthary">没找到您感兴趣的旅行主题？在这里告诉我们吧: </span>
+						<input type="text" style="width: 150px; color: #000;" onblur="handleTextChange(this, 'q7', true)">
+					</div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了选择您感兴趣的旅行内容/主题</span>
 					</div>
 					<div class="bottom-content">
 					<button type="button" class="btn btn-md btn-primary" onclick="answerQuestion('q7', 'q8', 'checkmark7')"><b>回答下一个问题吧</b></button>
@@ -283,8 +350,12 @@
 					<input id="datepicker2" type="text" style="width: 100px; color: #000;">
 					<span class="thirdary">出发</span>
 					</div>
+					<div class="sanityCheck button-panel" style="display: none;">
+					<img src="resources/img/error.png" style="padding-right: 10px; vertical-align: middle;">
+					<span class="forthary">亲，别忘了提供您的手机与电邮，以方便自游窝与您联系</span>
+					</div>
 					<div class="bottom-content">
-					<button type="button" class="btn btn-md btn-primary"><b>确认您的联系方式</b></button>
+					<button type="button" class="btn btn-md btn-primary" onclick="report()"><b>确认您的联系方式</b></button>
 					</div>
 				</div>
 				<div class="col-sm-1">
@@ -292,6 +363,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
