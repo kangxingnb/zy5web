@@ -1,0 +1,87 @@
+#national-park-map {
+	position: relative;
+	background-image: url("../resources/img/maps/us_cartoon_map.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 100% 100%;
+}
+#national-park-map *:hover {
+	cursor: pointer;
+}
+.grand-canyon-thumbnail {
+	position: absolute;
+	left: 17%;
+	top: 55%;
+	width: 8%;
+	z-index: 12;
+}
+.yellow-stone-thumbnail {
+	position: absolute;
+	left: 28%;
+	top: 27%;
+	width: 8%;
+	z-index: 11;
+}
+.yosemite-thumbnail {
+	position: absolute;
+	left: 2%;
+	top: 43%;
+	width: 8%;
+	z-index: 10;
+}
+.mount-rainier-thumbnail {
+	position: absolute;
+	left: 10%;
+	top: 9%;
+	width: 8%;
+	z-index: 9;
+}
+.olympic-thumbnail {
+	position: absolute;
+	left: 1%;
+	top: 8%;
+	width: 8%;
+	z-index: 8;
+}
+.volcano-thumbnail {
+	position: absolute;
+	left: 1%;
+	top: 70%;
+	width: 8%;
+	z-index: 7;
+}
+.bryce-canyon-thumbnail {
+	position: absolute;
+	left: 11%;
+	top: 40%;
+	width: 8%;
+	z-index: 6;
+}
+.arches-thumbnail {
+	position: absolute;
+	left: 18%;
+	top: 32%;
+	width: 8%;
+	z-index: 5;
+}
+.zion-thumbnail {
+	position: absolute;
+	left: 20%;
+	top: 44%;
+	width: 8%;
+	z-index: 4;
+}
+.everglades-thumbnail {
+	position: absolute;
+	left: 83%;
+	top: 88%;
+	width: 8%;
+	z-index: 3;
+}
+.crater-lake-thumbnail {
+	position: absolute;
+	left: 5%;
+	top: 23%;
+	width: 8%;
+	z-index: 2;
+}

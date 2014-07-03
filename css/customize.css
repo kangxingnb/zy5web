@@ -1,0 +1,76 @@
+.question-answer {
+	margin-bottom: 30px;	
+}
+.question-answer .button-panel {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.question-answer .button-panel button {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+#customize-map {
+	position: relative;
+	background-image: url("../resources/img/maps/usa_map.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 100% 100%;
+}
+#customize-map *:hover {
+	cursor: pointer;
+}
+.seattle {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+.sanfrancisco {
+	position: absolute;
+	left: 6%;
+	top: 38.5%;
+}
+.losangeles {
+	position: absolute;
+	left: 10%;
+	top: 48%;
+}
+.lasvegas {
+	position: absolute;
+	left: 16%;
+	top: 44%;
+}
+.orlando {
+	position: absolute;
+	left: 74%;
+	top: 75%;
+}
+.miami {
+	position: absolute;
+	left: 77%;
+	top: 80%;
+}
+.newyork {
+	position: absolute;
+	left: 81%;
+	top: 26%;
+}
+.washingtondc {
+	position: absolute;
+	left: 76%;
+	top: 39%;
+}
+.hawaii {
+	position: absolute;
+	left: 5%;
+	top: 85%;
+}
+.alaska {
+	position: absolute;
+	left: 2%;
+	top: 4%;
+}
+.caribbean {
+	position: absolute;
+	left: 65%;
+	top: 86%;
+}
