@@ -15,18 +15,18 @@ body {
 	background: rgba(60, 60, 60, 0.4) none no-repeat scroll top left;
 	border-bottom: 1px none;
 }
-.navbar.navbar-inverse.transparent .navbar-brand {
+.navbar.navbar-inverse .navbar-brand {
 	padding-top: 3px;
 	padding-bottom: 0;
 }
-.navbar.navbar-inverse.transparent a {
+.navbar.navbar-inverse  ul > li > a {
 	color: #DDD;	
 }
-.navbar.navbar-inverse.transparent li.dropdown ul.dropdown-menu {
+.navbar.navbar-inverse li.dropdown ul.dropdown-menu {
 	background-color: rgba(150, 150, 150, 0.2);
 	border-top: none;
 }
-.navbar.navbar-inverse.transparent li.active > a {
+.navbar.navbar-inverse li.active > a {
 	background-color: rgba(180, 180, 180, 0.5);
 }
 .top-content {
@@ -182,95 +182,6 @@ label.style-radio, label.style-checkbox {
 .checked-box {
 	background: url("../resources/img/icons/blue_tri_check_mark.png") no-repeat scroll right bottom #1986FF;
 }
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 600px) {
-	body.landing-page .mobile-bg {
-		background-image: url("../resources/img/background/sample_bg_7_fuzzy.jpg");
-	}
-	body.customize-page .mobile-bg {
-		background-image: url("../resources/img/background/bridge.jpg");
-	}
-	body.theme-park-page .mobile-bg {
-		background-image: url("../resources/img/background/theme_park_bg_1.jpg");
-	}
-	body.national-park-page .mobile-bg {
-		background-image: url("../resources/img/background/national_parks_bg_2.jpg");
-	}
-	body.common-bg .mobile-bg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		background-position: top left;
-		z-index: -1;
-	}
-	#customize-map, #national-park-map {
-		min-height: 300px;
-	}
-}
 .with-normal-box-shadow {
 	box-shadow: 2px 2px 3px #444;
-}
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-	body.landing-page .mobile-bg {
-		background-image: url("../resources/img/background/sample_bg_7_fuzzy.jpg");
-	}
-	body.customize-page .mobile-bg {
-		background-image: url("../resources/img/background/bridge.jpg");
-	}
-	body.theme-park-page .mobile-bg {
-		background-image: url("../resources/img/background/theme_park_bg_1.jpg");
-	}
-	body.national-park-page .mobile-bg {
-		background-image: url("../resources/img/background/national_parks_bg_2.jpg");
-	}
-	body.common-bg .mobile-bg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: top left;
-		z-index: -1;
-	}
-	#customize-map, #national-park-map {
-		min-height: 350px;
-	}
-}
-@media (min-device-width:769px) {
-	.dropdown:hover .dropdown-menu {
-		display: block;
-	}
-	body.landing-page {
-		background-image: url("../resources/img/background/sample_bg_7_fuzzy.jpg");
-	}
-	body.customize-page {
-		background-image: url("../resources/img/background/bridge.jpg");
-	}
-	body.theme-park-page {
-		background-image: url("../resources/img/background/theme_park_bg_1.jpg");
-	}
-	body.national-park-page {
-		background-image: url("../resources/img/background/national_parks_bg_2.jpg");
-	}
-	body.common-bg {
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: top left;
-		background-size: 100% auto;
-		min-height: 768px;
-		z-index: -1;
-	}
-	#customize-map, #national-park-map {
-		min-height: 400px;
-	}
 }

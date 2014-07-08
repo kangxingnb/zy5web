@@ -1,0 +1,105 @@
+#road-trip-photo-wall *:hover {
+	cursor: pointer;
+}
+#road-trip-photo-wall .paper-clip-thumbnail:hover {
+	cursor: default;
+}
+.hwy1-pic-1 {
+	position: absolute;
+	left: 60%;
+	top: 6%;
+	width: 25%;
+	z-index: 12;
+	-moz-transform:rotate(3deg);
+    -webkit-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+}
+.hwy1-pic-2 {
+	position: absolute;
+	left: 1%;
+	top: 35%;
+	width: 25%;
+	z-index: 11;
+	-moz-transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+}
+.hwy1-pic-3 {
+	position: absolute;
+	left: 36%;
+	top: 72%;
+	width: 25%;
+	z-index: 10;
+	-moz-transform:rotate(-2deg);
+    -webkit-transform:rotate(-2deg);
+    -o-transform:rotate(-2deg);
+    -ms-transform:rotate(-2deg);
+}
+.route-66-pic-1 {
+	position: absolute;
+	left: 28%;
+	top: 37%;
+	width: 25%;
+	z-index: 9;
+	-moz-transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+}
+.route-66-pic-2 {
+	position: absolute;
+	left: 52%;
+	top: 40%;
+	width: 25%;
+	z-index: 8;
+	-moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+}
+.hana-pic-1 {
+	position: absolute;
+	left: 10%;
+	top: 2%;
+	width: 25%;
+	z-index: 6;
+    -moz-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+}
+.hana-pic-2 {
+	position: absolute;
+	left: 75%;
+	top: 57%;
+	width: 25%;
+	z-index: 5;
+	-moz-transform:rotate(-8deg);
+    -webkit-transform:rotate(-8deg);
+    -o-transform:rotate(-8deg);
+    -ms-transform:rotate(-8deg);
+}
+.monument-valley-pic-1 {
+	position: absolute;
+	left: 8%;
+	top: 62%;
+	width: 25%;
+	z-index: 3;
+	-moz-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+    -ms-transform:rotate(5deg);
+}
+.monument-valley-pic-2 {
+	position: absolute;
+	left: 35%;
+	top: 3%;
+	width: 25%;
+	z-index: 2;
+	-moz-transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+}
