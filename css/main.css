@@ -118,10 +118,10 @@ body {
 	width: 100%;
 	position: relative;
 }
-.featured-trip > img {
+.featured-trip img {
 	width: 100%;
 }
-.featured-trip > .view-link {
+.featured-trip .view-link {
 	bottom: 0;
 	top: 0;
 	left: 0;
@@ -134,16 +134,19 @@ body {
 	left: 0;
 	right: 0;
 	position: absolute;
-	text-align: left;
+	text-align: center;
 	margin: 5px 5px;
 }
 .trip-title .thirdary {
 	font-size: 16px;
 	color: #EEE;
-	padding-left: 30px;
 	line-height: 1.5;
 }
-.full-width-content .trip-title .thirdary {
+.full-width-content .featured-trip .trip-title {
+	text-align: left;
+}
+.full-width-content .trip-title .thirdary,
+.full-width-content .trip-title .forthary {
 	padding-left: 60px;
 }
 .q-right-to-icon {

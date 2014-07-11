@@ -10,6 +10,7 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 <link rel="stylesheet" href="css/vendor/jquery-ui-1.10.4.min.css">
+<link rel="stylesheet" href="css/vendor/flexslider.css">
 <link rel="stylesheet" href="css/media.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/roadtrip.css">
@@ -54,7 +55,7 @@
 	
 	<div class="top-content">
 	    <div class="container clearfix">
-	    	<h1 class="primary center-align">自驾驰骋山海间</h1>
+	    	<h1 class="primary center-align">自驾旅行,让您自由驰骋山海间</h1>
 	    </div>
 	</div>
 	<div class="mid-content black-transparent-bg">
@@ -64,63 +65,179 @@
 			<br>
 			<span class="thirdary">- 加满油箱,带上您最喜欢的CD,系好安全带,去体验游览美国风情的最佳方式——景观公路自驾之旅吧!</span>
 			<br><br><br>
-			<span class="thirdary">- 这自驾的路上可谓"跋山涉水，穿云追月"; 在欣赏良辰美景之余，您更可以一路结识淳朴的美国人民，体会原汁原味的美国文化</span>
+			<span class="thirdary">- 自驾的路上可谓"跋山涉水，穿云追月"; 在欣赏良辰美景之余，您更可以一路结识淳朴的美国人民，体会原汁原味的美国文化</span>
 			</div>
 			<div class="col-sm-offset-1 col-sm-8">
 			<div id="road-trip-photo-wall">
-				<img class="hwy1-pic-1 with-normal-box-shadow" src="resources/img/road_trips/hwy1_photo_1.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
-				<img class="hwy1-pic-2 with-normal-box-shadow" src="resources/img/road_trips/hwy1_photo_2.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
-				<img class="hwy1-pic-3 with-normal-box-shadow" src="resources/img/road_trips/hwy1_photo_3.jpg" title="Mount Rainier - 雷尼尔山国家公园" onclick="scrollView('mount-rainier')">
-				<img class="route-66-pic-1 with-normal-box-shadow" src="resources/img/road_trips/route_66_photo_1.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
-				<img class="route-66-pic-2 with-normal-box-shadow" src="resources/img/road_trips/route_66_photo_2.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
-				<img class="hana-pic-1 with-normal-box-shadow" src="resources/img/road_trips/hana_photo_1.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
-				<img class="hana-pic-2 with-normal-box-shadow" src="resources/img/road_trips/hana_photo_2.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
-				<img class="monument-valley-pic-1 with-normal-box-shadow" src="resources/img/road_trips/monument_valley_photo_1.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
-				<img class="monument-valley-pic-2 with-normal-box-shadow" src="resources/img/road_trips/monument_valley_photo_2.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
+				<img class="hwy1-pic-1 with-normal-box-shadow" src="resources/img/road_trips/regular-size/hwy1_photo_1.jpg" title="加州一号公路之大苏尔无敌海景" onclick="scrollView('yellow-stone')">
+				<img class="hwy1-pic-2 with-normal-box-shadow" src="resources/img/road_trips/regular-size/hwy1_photo_2.jpg" title="夕阳下的加州一号海景公路之紫色沙滩" onclick="scrollView('yosemite')">
+				<img class="hwy1-pic-3 with-normal-box-shadow" src="resources/img/road_trips/regular-size/hwy1_photo_3.jpg" title="加州一号海景公路之旧金山金门大桥" onclick="scrollView('mount-rainier')">
+				<img class="route-66-pic-1 with-normal-box-shadow" src="resources/img/road_trips/regular-size/route_66_photo_1.jpg" title="暖阳映照下的美国66号公路" onclick="scrollView('yellow-stone')">
+				<img class="route-66-pic-2 with-normal-box-shadow" src="resources/img/road_trips/regular-size/route_66_photo_2.jpg" title="美国66号公路上的涂鸦凯迪拉克农场" onclick="scrollView('yosemite')">
+				<img class="hana-pic-1 with-normal-box-shadow" src="resources/img/road_trips/regular-size/hana_photo_1.jpg" title="夏威夷最美自驾公路——哈纳之路" onclick="scrollView('yellow-stone')">
+				<img class="hana-pic-2 with-normal-box-shadow" src="resources/img/road_trips/regular-size/hana_photo_2.jpg" title="哈纳之路的尽头——酷似月球表面的Haleakala国家公园" onclick="scrollView('yosemite')">
+				<img class="monument-valley-pic-1 with-normal-box-shadow" src="resources/img/road_trips/regular-size/monument_valley_photo_1.jpg" title="纪念碑谷自驾之旅中的绝美夕阳" onclick="scrollView('yellow-stone')">
+				<img class="monument-valley-pic-2 with-normal-box-shadow" src="resources/img/road_trips/regular-size/monument_valley_photo_2.jpg" title="纪念碑谷自驾行之拱门国家公园" onclick="scrollView('yosemite')">
 			</div>
 			</div>
 		</div>
 		</div>
 	</div>
-	<div class="bottom-content" style="margin-bottom: 10px;">
+	<div class="mid-content" style="margin-bottom: 10px;">
 		<div class="container">
 			<h1 class="secondary clearfix">四条最热门自驾路线，邀您一起体验</h1>
 		</div>
 	</div>
 	<div class="full-width-content">
-		<div id="grand-canyon" class="featured-trip center-align">
-			<img src="resources/img/national_parks/panorama/grand_canyon_panorama.jpg">
-			<a class="view-link" target="_blank" href="">大峡谷国家公园</a>
+		<div id="hwy1-flexslider" class="flexslider featured-trip center-align" style="border: 0; margin-bottom: 0;">
+			<ul class="slides">
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hwy1_panorama_1.jpg">
 			<div class="no-margin trip-title black-transparent-bg padding-5-px">
-			<span class="thirdary">Grand Canyon大峡谷国家公园</span>
+			<span class="thirdary">加州一号海景公路 - 日落金门,梦一样的地方</span>
 			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hwy1_panorama_2.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">加州一号海景公路 - 最爱那鲸鱼的深海一跃</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hwy1_panorama_3.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">加州一号海景公路 - 洛杉矶全景哪里看?快来格里菲斯天文台!</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hwy1_panorama_4.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">加州一号海景公路 - 享绝美海景,尽在大苏尔</span>
+			</div>
+			</a>
+			</li>
+			</ul>
 		</div>
 	</div>
 	<div class="full-width-content">
-		<div id="yellow-stone" class="featured-trip center-align">
-			<img src="resources/img/national_parks/panorama/yellow_stone_panorama.jpg">
-			<a class="view-link" target="_blank" href="">黄石国家公园</a>
+		<div id="route-66-flexslider" class="flexslider featured-trip center-align" style="border: 0; margin-bottom: 0;">
+			<ul class="slides">
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/route_66_panorama_1.jpg">
 			<div class="no-margin trip-title black-transparent-bg padding-5-px">
-			<span class="thirdary">Yellowstone黄石国家公园</span>
+			<span class="thirdary">美国"母亲之路"66号公路 - 自驾路上不孤独</span>
 			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/route_66_panorama_2.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">美国"母亲之路"66号公路 - 汽车总动员原景重现</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/route_66_panorama_3.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">美国"母亲之路"66号公路 - 汽车旅馆，一道独特的风景线</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/route_66_panorama_4.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">美国"母亲之路"66号公路 - 以黑白向经典致敬</span>
+			</div>
+			</a>
+			</li>
+			</ul>
 		</div>
 	</div>
 	<div class="full-width-content">
-		<div id="yosemite" class="featured-trip center-align">
-			<img src="resources/img/national_parks/panorama/yosemite_panorama_1.jpg">
-			<a class="view-link" target="_blank" href="">优胜美地国家公园</a>
+		<div id="hana-flexslider" class="flexslider featured-trip center-align" style="border: 0; margin-bottom: 0;">
+			<ul class="slides">
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hana_panorama_1.jpg">
 			<div class="no-margin trip-title black-transparent-bg padding-5-px">
-			<span class="thirdary">Yosemite优胜美地国家公园</span>
+			<span class="thirdary">夏威夷哈纳之路 - 海景十八弯</span>
 			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hana_panorama_2.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">夏威夷哈纳之路 - 地球上最像月面的地方</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hana_panorama_3.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">夏威夷哈纳之路 - 曲径通幽处，竹林草木深</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/hana_panorama_4.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">夏威夷哈纳之路 - 岔路尽头的惊喜</span>
+			</div>
+			</a>
+			</li>
+			</ul>
 		</div>
 	</div>
 	<div class="full-width-content">
-		<div id="yosemite" class="featured-trip center-align">
-			<img src="resources/img/national_parks/panorama/yosemite_panorama_1.jpg">
-			<a class="view-link" target="_blank" href="">优胜美地国家公园</a>
+		<div id="monument-valley-flexslider" class="flexslider featured-trip center-align" style="border: 0; margin-bottom: 0;">
+			<ul class="slides">
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/monument_valley_panorama_1.jpg">
 			<div class="no-margin trip-title black-transparent-bg padding-5-px">
-			<span class="thirdary">Yosemite优胜美地国家公园</span>
+			<span class="thirdary">纪念碑谷自驾之行 - 拱门之外，别有洞天</span>
 			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/monument_valley_panorama_2.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">纪念碑谷自驾之行 - 尤喜那大漠的苍茫</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/monument_valley_panorama_3.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">纪念碑谷自驾之行 - 冰天雪地，另是一番景致</span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a target="_blank" href="">
+			<img src="resources/img/road_trips/panorama/monument_valley_panorama_4.jpg">
+			<div class="no-margin trip-title black-transparent-bg padding-5-px">
+			<span class="thirdary">纪念碑谷自驾之行 - 公路中读出孤独</span>
+			</div>
+			</a>
+			</li>
+			</ul>
 		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -129,16 +246,9 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="js/customize.js"></script>
 	<script type="text/javascript" src="js/scrollView.js"></script>
-	<!--
-	<script type="text/javascript" src="http://player.youku.com/jsapi">
-		player = new YKU.Player('youkuplayer',{
-			styleid: '1',
-			client_id: '442483cac4feb53e',
-			vid: 'XNzMyNDcxMTQw'
-		});
-	</script>
-	-->
+	<script type="text/javascript" src="js/roadtrip.js"></script>
 </body>
 </html>
