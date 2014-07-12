@@ -10,9 +10,9 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 <link rel="stylesheet" href="css/vendor/jquery-ui/jquery-ui-1.10.4.min.css">
+<link rel="stylesheet" href="css/vendor/killercarousel/killercarousel.css">
 <link rel="stylesheet" href="css/media.css">
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/nationalpark.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +21,7 @@
       <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="national-park-page common-bg">
+<body class="food-page common-bg">
 	<div class="mobile-bg"></div>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top transparent" role="navigation" style="position: relative !important;">
@@ -54,33 +54,38 @@
 	
 	<div class="top-content">
 	    <div class="container clearfix">
-	    	<h1 class="primary center-align">自然秘境: 国家公园探访之旅</h1>
+	    	<h1 class="primary center-align">味蕾诱惑: 美食全搜罗</h1>
+	    	<h1 class="secondary center-align">尽享极致<b>全球美食之旅</b></h1>
 	    </div>
 	</div>
 	<div class="mid-content black-transparent-bg">
 		<div class="container clearfix">
 		<div class="row sub-mid-content">
 			<div class="col-sm-4">
-			<br>
-			<span class="thirdary">- 如果你看厌了大都市的繁华和喧闹，渴望享受一段真正融入自然的旅程，那就去那些著名的国家公园里享受一下大自然的恩赐吧!</span>
-			<br><br><br>
-			<span class="thirdary">- 美国59个国家公园中的每一处景区都有其独一无二的特色: 这里绝不缺少秀丽的自然风光，也不乏鬼斧神工的地貌构造，其中的14处国家公园更是被评为“世界遗产”的宝地哦～</span>
-			<br><br><br>
-			<span class="thirdary">- 相信许多国家公园的名字您已是耳熟能详: <b class="secondary">黄石</b>，<b class="secondary">大峡谷</b>，<b class="secondary">优胜美地</b>等等。想必您已经迫不及待，想要一睹这些人间仙境的风采了吧？</span>
+			<span id="photo-desc" class="thirdary"></span>
 			</div>
 			<div class="col-sm-8">
-			<div id="national-park-map">
-				<img class="grand-canyon-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/grand_canyon_thumbnail.jpg" title="Grand Canyon - 大峡谷国家公园" onclick="scrollView('grand-canyon')">
-				<img class="yellow-stone-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/yellow_stone_thumbnail.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
-				<img class="yosemite-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/yosemite_thumbnail.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
-				<img class="mount-rainier-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/mount_rainier_thumbnail.jpg" title="Mount Rainier - 雷尼尔山国家公园" onclick="scrollView('mount-rainier')">
-				<img class="olympic-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/olympic_thumbnail.jpg" title="Olympic - 奥林匹克国家公园" onclick="scrollView('olympic')">
-				<img class="volcano-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/volcanoes_thumbnail.jpg" title="Volcanoes - 火山国家公园" onclick="scrollView('volcanoes')">
-				<img class="bryce-canyon-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/bryce_canyon_thumbnail.jpg" title="Bryce Canyon - 布莱斯峡谷国家公园" onclick="scrollView('bryce-canyon')">
-				<img class="arches-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/arches_thumbnail.jpg" title="Arches - 拱门国家公园" onclick="scrollView('arches')">
-				<img class="zion-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/zion_thumbnail.jpg" title="Zion - 锡安国家公园" onclick="scrollView('zion')">
-				<img class="everglades-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/everglades_thumbnail.jpg" title="Everglades - 大沼泽国家公园" onclick="scrollView('everglades')">
-				<img class="crater-lake-thumbnail with-normal-box-shadow" src="resources/img/national_parks/thumbnail/crater_lake_thumbnail.jpg" title="Crater Lake - 陨石湖国家公园" onclick="scrollView('crater-lake')">
+			<div id="food-photo-carousel" class="kc-wrap">
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_1.jpg" title="Grand Canyon - 大峡谷国家公园" onclick="scrollView('grand-canyon')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_2.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_3.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_4.jpg" title="Mount Rainier - 雷尼尔山国家公园" onclick="scrollView('mount-rainier')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_5.jpg" title="Olympic - 奥林匹克国家公园" onclick="scrollView('olympic')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_6.jpg" title="Volcanoes - 火山国家公园" onclick="scrollView('volcanoes')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_7.jpg" title="Bryce Canyon - 布莱斯峡谷国家公园" onclick="scrollView('bryce-canyon')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_8.jpg" title="Arches - 拱门国家公园" onclick="scrollView('arches')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_9.jpg" title="Zion - 锡安国家公园" onclick="scrollView('zion')">
+				</div>
+				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_10.jpg" title="Everglades - 大沼泽国家公园" onclick="scrollView('everglades')">
+				</div>
 			</div>
 			</div>
 		</div>
@@ -190,14 +195,7 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scrollView.js"></script>
-	<!--
-	<script type="text/javascript" src="http://player.youku.com/jsapi">
-		player = new YKU.Player('youkuplayer',{
-			styleid: '1',
-			client_id: '442483cac4feb53e',
-			vid: 'XNzMyNDcxMTQw'
-		});
-	</script>
-	-->
+	<script type="text/javascript" src="js/vendor/killercarousel.js"></script>
+	<script type="text/javascript" src="js/food.js"></script>
 </body>
 </html>
