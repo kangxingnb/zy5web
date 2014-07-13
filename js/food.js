@@ -11,3 +11,6 @@ $(function() {
         infiniteLoop: true
     });
 });
+$(function() {
+	$('.fancybox').fancybox();
+});

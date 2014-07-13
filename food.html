@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 <link rel="stylesheet" href="css/vendor/jquery-ui/jquery-ui-1.10.4.min.css">
 <link rel="stylesheet" href="css/vendor/killercarousel/killercarousel.css">
+<link rel="stylesheet" href="css/vendor/fancybox/jquery.fancybox.css">
 <link rel="stylesheet" href="css/media.css">
 <link rel="stylesheet" href="css/main.css">
 
@@ -61,30 +62,51 @@
 	<div class="mid-content black-transparent-bg">
 		<div class="container clearfix">
 		<div class="row sub-mid-content">
-			<div class="col-sm-4">
-			<span id="photo-desc" class="thirdary"></span>
+			<div class="col-sm-4" style="position: relative;">
+			<p class="thirdary" style="padding-top: 30%; padding-bottom: 30%;">有人说，在美国可以品尝到世界的味道; 其实,最极致的美食体验不仅关乎味蕾,也包含了视觉、听觉与整个就餐环境的感受，请跟着自游窝来一次极致的美食之旅吧！
+			</p>
 			</div>
 			<div class="col-sm-8">
 			<div id="food-photo-carousel" class="kc-wrap">
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_1.jpg" title="Grand Canyon - 大峡谷国家公园" onclick="scrollView('grand-canyon')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_1.jpg" title="Beef Sirloin - 西冷牛排大餐" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_1.jpg" title="Beef Sirloin - 西冷牛排大餐 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_2.jpg" title="Yellow Stone - 黄石国家公园" onclick="scrollView('yellow-stone')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_2.jpg" title="Chicken Teriyaki - 东瀛风味之碳烤照烧鸡肉饭" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_2.jpg" title="Chicken Teriyaki - 东瀛风味之碳烤照烧鸡肉饭 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_3.jpg" title="Yosemite - 优胜美地国家公园" onclick="scrollView('yosemite')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_3.jpg" title="Sweet Desserts - 巧克力慕斯+柠檬乳酪蛋糕的双重诱惑" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_3.jpg" title="Sweet Desserts - 巧克力慕斯+柠檬乳酪蛋糕的双重诱惑 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_4.jpg" title="Mount Rainier - 雷尼尔山国家公园" onclick="scrollView('mount-rainier')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_4.jpg" title="Mexican Classic - 当Salsa酱汁遇到玉米薯片" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_4.jpg" title="Mexican Classic - 当Salsa酱汁遇到玉米薯片 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_5.jpg" title="Olympic - 奥林匹克国家公园" onclick="scrollView('olympic')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_5.jpg" title="Hawaiian Passion - Luau烤猪盛宴" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_5.jpg" title="Hawaiian Passion - Luau烤猪盛宴 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_6.jpg" title="Volcanoes - 火山国家公园" onclick="scrollView('volcanoes')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_6.jpg" title="Ramen's Elite - 精选日式牛尾拉面" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_6.jpg" title="Ramen's Elite - 精选日式牛尾拉面 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_7.jpg" title="Bryce Canyon - 布莱斯峡谷国家公园" onclick="scrollView('bryce-canyon')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_7.jpg" title="Royal Seafood - 阿拉斯加帝王蟹" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_7.jpg" title="Royal Seafood - 阿拉斯加帝王蟹 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_8.jpg" title="Arches - 拱门国家公园" onclick="scrollView('arches')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_8.jpg" title="Magical Drink - 哈利迷最爱的黄油啤酒" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_8.jpg" title="Magical Drink - 哈利迷最爱的黄油啤酒 (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_9.jpg" title="Zion - 锡安国家公园" onclick="scrollView('zion')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_9.jpg" title="帝王蟹: 食客的天堂，厨师的'噩梦'" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_9.jpg" title="帝王蟹: 食客的天堂，厨师的'噩梦' (点击放大浏览)">
+				</a>
 				</div>
-				<div class="kc-item"><img src="resources/img/food/carousel/food_carousel_10.jpg" title="Everglades - 大沼泽国家公园" onclick="scrollView('everglades')">
+				<div class="kc-item">
+				<a class="fancybox" href="resources/img/food/regular-size/food_regular_10.jpg" title="Fairy Tale Come True - 与美女和野兽一同就餐" data-fancybox-group="food-gallery"><img src="resources/img/food/carousel/food_carousel_10.jpg" title="Fairy Tale Come True - 与美女和野兽一同就餐 (点击放大浏览)">
+				</a>
 				</div>
 			</div>
 			</div>
@@ -93,7 +115,7 @@
 	</div>
 	<div class="bottom-content" style="margin-bottom: 10px;">
 		<div class="container">
-			<h1 class="secondary clearfix">最特色国家公园，先睹为快！</h1>
+			<h1 class="secondary clearfix">美国餐饮花样多，且听小窝为您道来</h1>
 		</div>
 	</div>
 	<div class="full-width-content">
@@ -196,6 +218,7 @@
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scrollView.js"></script>
 	<script type="text/javascript" src="js/vendor/killercarousel.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/food.js"></script>
 </body>
 </html>
