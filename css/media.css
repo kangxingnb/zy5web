@@ -17,7 +17,7 @@ and (max-device-width: 600px) {
 		background-image: url("../resources/img/background/bamboo_forest.jpg");
 	}
 	body.food-page .mobile-bg {
-		background-image: url("../resources/img/background/bamboo_forest.jpg");
+		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.common-bg .mobile-bg {
 		position: fixed;
@@ -54,7 +54,7 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/bamboo_forest.jpg");
 	}
 	body.food-page .mobile-bg {
-		background-image: url("../resources/img/background/bamboo_forest.jpg");
+		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.common-bg .mobile-bg {
 		position: fixed;
@@ -91,7 +91,7 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/bamboo_forest.jpg");
 	}
 	body.food-page {
-		background-image: url("../resources/img/background/bamboo_forest.jpg");
+		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;

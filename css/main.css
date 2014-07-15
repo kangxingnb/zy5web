@@ -1,9 +1,21 @@
 body {
-	font-family: Helvetica, Arial, "华文黑体", "文泉驿正黑体", "Microsoft YaHei", "微软雅黑", "Simsun", "宋体", sans-serif;
+	font-family: Helvetica,Arial,"华文黑体","Microsoft YaHei","微软雅黑","文泉驿正黑体","Simsun","宋体",sans-serif;
 	font-size: 14px;
+}
+.relative-pos {
+	position: relative !important;
 }
 .no-margin {
 	margin: 0 !important;
+}
+.has-top-padding-sm {
+	padding-top: 10px;
+}
+.has-bottom-padding-sm {
+	padding-bottom: 10px;
+}
+.has-top-margin-lg {
+	margin-top: 40px !important;
 }
 .padding-5-px {
 	padding: 5px 5px;
@@ -118,7 +130,7 @@ body {
 	width: 100%;
 	position: relative;
 }
-.featured-trip img {
+.featured-trip img, .trip-title img {
 	width: 100%;
 }
 .featured-trip .view-link {

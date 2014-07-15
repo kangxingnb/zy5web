@@ -14,7 +14,6 @@ $(function() {
 $(function() {
 	$('.fancybox').fancybox();
 });
-var licBannerRemoved = false;
 var removeLicBanner = function() {
 	if ($("#food-photo-carousel > div").filter(":odd")) {
 		$("#food-photo-carousel > div").filter(":odd").remove();
