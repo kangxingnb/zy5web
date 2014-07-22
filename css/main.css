@@ -14,17 +14,32 @@ body {
 .has-bottom-padding-sm {
 	padding-bottom: 10px;
 }
+.has-top-padding-md {
+	padding-top: 20px;
+}
+.has-bottom-padding-md {
+	padding-bottom: 20px;
+}
+.has-top-padding-lg {
+	padding-top: 20px;
+}
+.has-bottom-padding-lg {
+	padding-bottom: 20px;
+}
 .has-top-margin-lg {
 	margin-top: 40px !important;
 }
 .padding-5-px {
 	padding: 5px 5px;
 }
+.padding-horizontal-5-px {
+	padding: 0 5px;
+}
 .black-transparent-bg {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 .navbar.navbar-inverse.transparent {
-	background: rgba(60, 60, 60, 0.4) none no-repeat scroll top left;
+	background: rgba(20, 20, 20, 0.6) none no-repeat scroll top left;
 	border-bottom: 1px none;
 }
 .navbar.navbar-inverse .navbar-brand {
@@ -54,6 +69,7 @@ body {
 }
 .secondary {
 	font-size: 24px;
+	font-weight: 600;
 	color: #EEE;
 	padding-bottom: 10px;
 	margin-top: 1px;
@@ -96,10 +112,10 @@ body {
 	display: inline-block;
 	margin-right: 5px;
 }
-.mid-content .sub-mid-content .primary {
-	font-size: 30px;
+.sub-mid-content .primary {
+	font-size: 24px;
 }
-.mid-content .sub-mid-content .secondary {
+.sub-mid-content .secondary {
 	font-size: 18px;
 }
 .mid-content .sub-mid-content .description {
@@ -124,7 +140,7 @@ body {
 	margin-top: 20px;
 }
 .bottom-content .featured-trip:hover {
-	box-shadow: 2px 2px 3px #444;
+	box-shadow: 2px 2px 3px #444 !important;
 }
 .full-width-content {
 	width: 100%;
@@ -149,7 +165,8 @@ body {
 	text-align: center;
 	margin: 5px 5px;
 }
-.trip-title .thirdary {
+.trip-title .thirdary,
+.trip-title.thirdary {
 	font-size: 16px;
 	color: #EEE;
 	line-height: 1.5;
@@ -158,7 +175,9 @@ body {
 	text-align: left;
 }
 .full-width-content .trip-title .thirdary,
-.full-width-content .trip-title .forthary {
+.full-width-content .trip-title.thirdary,
+.full-width-content .trip-title .forthary,
+.full-width-content .trip-title.forthary {
 	padding-left: 60px;
 }
 .q-right-to-icon {

@@ -7,7 +7,7 @@ var mouseHoverOutSliderFunc = function() {
 
 $(window).load(function() {
 	$('.flexslider').flexslider({
-		animation: "fade",
+		animation: "slide",
 		controlNav: false,
 		slideshowSpeed: 6000,
 		animationSpeed: 800

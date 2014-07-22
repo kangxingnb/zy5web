@@ -14,10 +14,13 @@ and (max-device-width: 600px) {
 		background-image: url("../resources/img/background/national_parks_bg_2.jpg");
 	}
 	body.road-trip-page .mobile-bg {
-		background-image: url("../resources/img/background/bamboo_forest.jpg");
+		background-image: url("../resources/img/background/self_drive_tour_bg.jpg");
 	}
 	body.food-page .mobile-bg {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
+	}
+	body.cruise-page .mobile-bg {
+		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
 	body.common-bg .mobile-bg {
 		position: fixed;
@@ -51,10 +54,13 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/national_parks_bg_2.jpg");
 	}
 	body.road-trip-page .mobile-bg {
-		background-image: url("../resources/img/background/bamboo_forest.jpg");
+		background-image: url("../resources/img/background/self_drive_tour_bg.jpg");
 	}
 	body.food-page .mobile-bg {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
+	}
+	body.cruise-page .mobile-bg {
+		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
 	body.common-bg .mobile-bg {
 		position: fixed;
@@ -88,10 +94,13 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/national_parks_bg_2.jpg");
 	}
 	body.road-trip-page {
-		background-image: url("../resources/img/background/bamboo_forest.jpg");
+		background-image: url("../resources/img/background/self_drive_tour_bg.jpg");
 	}
 	body.food-page {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
+	}
+	body.cruise-page {
+		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
