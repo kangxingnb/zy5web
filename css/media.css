@@ -22,6 +22,9 @@ and (max-device-width: 600px) {
 	body.cruise-page .mobile-bg {
 		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
+	body.movie-page .mobile-bg {
+		background-image: url("../resources/img/background/movie_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -62,6 +65,9 @@ and (max-device-width: 1024px) {
 	body.cruise-page .mobile-bg {
 		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
+	body.movie-page .mobile-bg {
+		background-image: url("../resources/img/background/movie_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -101,6 +107,9 @@ and (max-device-width: 1024px) {
 	}
 	body.cruise-page {
 		background-image: url("../resources/img/background/cruise_bg.jpg");
+	}
+	body.movie-page {
+		background-image: url("../resources/img/background/movie_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;

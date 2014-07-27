@@ -1,5 +1,0 @@
-/* CSS for images inside item wrapper */
-.kc-item img {
-    position:absolute;
-    width:100%;             /* Make images expand to wrapper size. */
-}

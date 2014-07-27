@@ -15,8 +15,8 @@ $(function() {
 	$('.fancybox').fancybox();
 });
 var removeLicBanner = function() {
-	if ($("#food-photo-carousel > div").filter(":odd")) {
-		$("#food-photo-carousel > div").filter(":odd").remove();
+	if ($("#photo-carousel > div").filter(":odd")) {
+		$("#photo-carousel > div").filter(":odd").remove();
 	}
 };
 $(window).load( function() {

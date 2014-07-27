@@ -32,7 +32,10 @@
     -webkit-tap-highlight-color:rgba(0,0,0,0); 
     visibility:hidden;
 }
-
+.kc-item img {
+    position:absolute;
+    width:100%;  
+}
 
 /*
     Item Shadows are made from three sections, bottom, left and right.
