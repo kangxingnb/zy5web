@@ -25,6 +25,9 @@ and (max-device-width: 600px) {
 	body.movie-page .mobile-bg {
 		background-image: url("../resources/img/background/movie_bg.jpg");
 	}
+	body.photo-page .mobile-bg {
+		background-image: url("../resources/img/background/photo_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -68,6 +71,9 @@ and (max-device-width: 1024px) {
 	body.movie-page .mobile-bg {
 		background-image: url("../resources/img/background/movie_bg.jpg");
 	}
+	body.photo-page .mobile-bg {
+		background-image: url("../resources/img/background/photo_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -110,6 +116,9 @@ and (max-device-width: 1024px) {
 	}
 	body.movie-page {
 		background-image: url("../resources/img/background/movie_bg.jpg");
+	}
+	body.photo-page {
+		background-image: url("../resources/img/background/photo_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
