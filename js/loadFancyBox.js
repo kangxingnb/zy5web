@@ -1,0 +1,2 @@
+// load fancybox
+$('.fancybox').fancybox();

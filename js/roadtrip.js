@@ -16,9 +16,6 @@ $(window).load(function() {
 	$('#route-66-flexslider').flexslider("stop");
 	$('#hana-flexslider').flexslider("stop");
 	$('#monument-valley-flexslider').flexslider("stop");
-	
-	// load fancybox
-	$('.fancybox').fancybox();
 });
 
 $('.flexslider').hover(mouseHoverInSliderFunc, mouseHoverOutSliderFunc);

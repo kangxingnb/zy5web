@@ -11,9 +11,6 @@ $(function() {
         infiniteLoop: true
     });
 });
-$(function() {
-	$('.fancybox').fancybox();
-});
 var removeLicBanner = function() {
 	if ($("#photo-carousel > div").filter(":odd")) {
 		$("#photo-carousel > div").filter(":odd").remove();

@@ -5,7 +5,4 @@ $(window).load(function() {
 		slideshowSpeed: 6000,
 		animationSpeed: 800
 	});
-	
-	// load fancybox
-	$('.fancybox').fancybox();
 });
