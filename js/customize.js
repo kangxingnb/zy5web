@@ -110,7 +110,7 @@ var handleMapAnimation = function (curBox) {
 	}
 };
 var playBounceEffect = function (place) {
-	$(place).effect('bounce', 2000);
+	$(place).stop().effect('bounce', { direction:'down', times:5 }, 1600);
 };
 var stopBounceEffect = function (place) {
 	$(place).stop();

@@ -31,6 +31,9 @@ and (max-device-width: 600px) {
 	body.smalltown-page .mobile-bg {
 		background-image: url("../resources/img/background/smalltown_bg.jpg");
 	}
+	body.wedding-page .mobile-bg {
+		background-image: url("../resources/img/background/wedding_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -80,6 +83,9 @@ and (max-device-width: 1024px) {
 	body.smalltown-page .mobile-bg {
 		background-image: url("../resources/img/background/smalltown_bg.jpg");
 	}
+	body.wedding-page .mobile-bg {
+		background-image: url("../resources/img/background/wedding_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -128,6 +134,9 @@ and (max-device-width: 1024px) {
 	}
 	body.smalltown-page {
 		background-image: url("../resources/img/background/smalltown_bg.jpg");
+	}
+	body.wedding-page {
+		background-image: url("../resources/img/background/wedding_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
