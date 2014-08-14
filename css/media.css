@@ -2,7 +2,7 @@
 and (min-device-width: 320px)
 and (max-device-width: 600px) {
 	body.landing-page .mobile-bg {
-		background-image: url("../resources/img/background/sample_bg_7_fuzzy.jpg");
+		background-image: url("../resources/img/background/main_bg.jpg");
 	}
 	body.customize-page .mobile-bg {
 		background-image: url("../resources/img/background/bridge.jpg");
@@ -20,7 +20,7 @@ and (max-device-width: 600px) {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.cruise-page .mobile-bg {
-		background-image: url("../resources/img/background/cruise_bg.jpg");
+		background-image: url("../resources/img/background/main_bg.jpg");
 	}
 	body.movie-page .mobile-bg {
 		background-image: url("../resources/img/background/movie_bg.jpg");
@@ -54,7 +54,7 @@ and (max-device-width: 600px) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
 	body.landing-page .mobile-bg {
-		background-image: url("../resources/img/background/sample_bg_7_fuzzy.jpg");
+		background-image: url("../resources/img/background/main_bg.jpg");
 	}
 	body.customize-page .mobile-bg {
 		background-image: url("../resources/img/background/bridge.jpg");
@@ -72,7 +72,7 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.cruise-page .mobile-bg {
-		background-image: url("../resources/img/background/cruise_bg.jpg");
+		background-image: url("../resources/img/background/main_bg.jpg");
 	}
 	body.movie-page .mobile-bg {
 		background-image: url("../resources/img/background/movie_bg.jpg");
@@ -106,7 +106,7 @@ and (max-device-width: 1024px) {
 		display: block;
 	}
 	body.landing-page {
-		background-image: url("../resources/img/background/sample_bg_7_fuzzy.jpg");
+		background-image: url("../resources/img/background/main_bg.jpg");
 	}
 	body.customize-page {
 		background-image: url("../resources/img/background/bridge.jpg");
@@ -124,7 +124,7 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.cruise-page {
-		background-image: url("../resources/img/background/cruise_bg.jpg");
+		background-image: url("../resources/img/background/main_bg.jpg");
 	}
 	body.movie-page {
 		background-image: url("../resources/img/background/movie_bg.jpg");

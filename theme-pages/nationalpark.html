@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/resources/img/icons/nest.png">
+<title>自然秘境: 国家公园探访之旅 - 自游窝，您的定制旅游专家</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="/css/vendor/jquery-ui/jquery-ui-1.10.4.min.css">
+<link rel="stylesheet" href="/css/media.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/nationalpark.css">
+<link rel="stylesheet" href="/css/imagehover.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="national-park-page common-bg">
+	<div class="mobile-bg"></div>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top transparent" role="navigation" style="position: relative !important;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/index.html"><img src="/resources/img/icons/logo.png" style="width: 100%;"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<div class="pull-right icon-panel">
+					<a href="#qq"><img src="/resources/img/icons/qq_icon.png" style="height: 30px;" title="来QQ找小窝吧"></a>
+					<a href="#weixin"><img src="/resources/img/icons/weixin_icon.png" style="height: 30px;" title="关注自游窝官微"></a>
+					<a href="#weibo"><img src="/resources/img/icons/weibo_icon.png" style="height: 30px;" title="小窝微博欢迎你"></a>
+				</div>
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="#concept">服务理念</a></li>
+					<li><a href="/customize.html">定制小助手</a></li>
+					<li class="active"><a href="special.html">特色旅程</a></li>
+					<li><a href="#destinations">探索目的地</a></li>
+					<li><a href="#about">关于自游窝</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="top-content">
+	    <div class="container clearfix">
+	        <ol class="breadcrumb" style="background-color: transparent; padding: 0 15px;">
+		  		<li><a href="/index.html" class="forthary no-text-decoration">首页</a></li>
+		  		<li><a href="#" class="forthary no-text-decoration">特色旅程</a></li>
+		  		<li class="thirdary">国家公园</li>
+		    </ol>
+	    	<h1 class="primary center-align">自然秘境: 国家公园探访之旅</h1>
+	    	<h1 class="secondary center-align">带您饱览<b>地球之最</b></h1>
+	    </div>
+	</div>
+	<div class="mid-content black-transparent-bg">
+		<div class="container clearfix">
+		<div class="row sub-mid-content">
+			<div class="col-sm-4">
+			<br>
+			<span class="thirdary">- 如果你看厌了大都市的繁华和喧闹，渴望享受一段真正融入自然的旅程，那就去那些著名的国家公园里享受一下大自然的恩赐吧!</span>
+			<br><br><br>
+			<span class="thirdary">- 美国59个国家公园中的每一处景区都有其独一无二的特色: 这里绝不缺少秀丽的自然风光，也不乏鬼斧神工的地貌构造，其中的14处国家公园更是被评为“世界遗产”的宝地哦～</span>
+			<br><br><br>
+			<span class="thirdary">- 相信许多国家公园的名字您已是耳熟能详: <b class="secondary">黄石</b>，<b class="secondary">大峡谷</b>，<b class="secondary">优胜美地</b>等等。想必您已经迫不及待，想要一睹这些人间仙境的风采了吧？</span>
+			</div>
+			<div class="col-sm-8">
+			<div id="national-park-map">
+				<img class="grand-canyon-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/grand_canyon_thumbnail.jpg" title="Grand Canyon - 大峡谷国家公园  (点击浏览相应内容)" onclick="scrollView('grand-canyon')">
+				<img class="yellow-stone-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/yellow_stone_thumbnail.jpg" title="Yellow Stone - 黄石国家公园  (点击浏览相应内容)" onclick="scrollView('yellow-stone')">
+				<img class="yosemite-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/yosemite_thumbnail.jpg" title="Yosemite - 优胜美地国家公园  (点击浏览相应内容)" onclick="scrollView('yosemite')">
+				<img class="mount-rainier-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/mount_rainier_thumbnail.jpg" title="Mount Rainier - 雷尼尔山国家公园  (点击浏览相应内容)" onclick="scrollView('mount-rainier')">
+				<img class="olympic-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/olympic_thumbnail.jpg" title="Olympic - 奥林匹克国家公园  (点击浏览相应内容)" onclick="scrollView('olympic')">
+				<img class="volcano-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/volcanoes_thumbnail.jpg" title="Volcanoes - 火山国家公园  (点击浏览相应内容)" onclick="scrollView('volcanoes')">
+				<img class="bryce-canyon-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/bryce_canyon_thumbnail.jpg" title="Bryce Canyon - 布莱斯峡谷国家公园  (点击浏览相应内容)" onclick="scrollView('bryce-canyon')">
+				<img class="arches-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/arches_thumbnail.jpg" title="Arches - 拱门国家公园  (点击浏览相应内容)" onclick="scrollView('arches')">
+				<img class="zion-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/zion_thumbnail.jpg" title="Zion - 锡安国家公园  (点击浏览相应内容)" onclick="scrollView('zion')">
+				<img class="everglades-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/everglades_thumbnail.jpg" title="Everglades - 大沼泽国家公园  (点击浏览相应内容)" onclick="scrollView('everglades')">
+				<img class="crater-lake-thumbnail with-normal-box-shadow" src="/resources/img/national_parks/thumbnail/crater_lake_thumbnail.jpg" title="Crater Lake - 陨石湖国家公园  (点击浏览相应内容)" onclick="scrollView('crater-lake')">
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="bottom-content" style="margin-bottom: 10px;">
+		<div class="container">
+			<h1 class="secondary clearfix">最特色国家公园，先睹为快！</h1>
+		</div>
+	</div>
+	<div class="full-width-content">
+		<div id="grand-canyon" class="featured-trip center-align">
+			<img src="/resources/img/national_parks/panorama/grand_canyon_panorama.jpg">
+			<a class="view-link" target="_blank" href="">
+				<p class="text-hover-content black-transparent-bg">
+				<span class="thirdary"><b>Grand Canyon大峡谷国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+				</p>
+				<div class="no-margin trip-title black-transparent-bg text-hover-content-inverse padding-5-px">
+				<span class="thirdary">Grand Canyon大峡谷国家公园</span>
+				</div>
+			</a>
+			</div>
+		</div>
+	</div>
+	<div class="full-width-content">
+		<div id="yellow-stone" class="featured-trip center-align">
+			<img src="/resources/img/national_parks/panorama/yellow_stone_panorama.jpg">
+			<a class="view-link" target="_blank" href="">
+				<p class="text-hover-content black-transparent-bg">
+				<span class="thirdary"><b>Yellowstone黄石国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+				</p>
+				<div class="no-margin trip-title black-transparent-bg text-hover-content-inverse padding-5-px">
+				<span class="thirdary">Yellowstone黄石国家公园</span>
+				</div>
+			</a>
+			</div>
+		</div>
+	</div>
+	<div class="full-width-content">
+		<div id="yosemite" class="featured-trip center-align">
+			<img src="/resources/img/national_parks/panorama/yosemite_panorama_1.jpg">
+			<a class="view-link" target="_blank" href="">
+				<p class="text-hover-content black-transparent-bg">
+				<span class="thirdary"><b>Yosemite优胜美地国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+				</p>
+				<div class="no-margin trip-title black-transparent-bg text-hover-content-inverse padding-5-px">
+				<span class="thirdary">Yosemite优胜美地国家公园</span>
+				</div>
+			</a>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-content">
+		<div class="container">
+			<div class="row">
+				<div id="mount-rainier" class="col-sm-6 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/panorama/mount_rainier_panorama.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Mount Rainier雷尼尔山国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Mount Rainier雷尼尔山国家公园</span>
+						</div>
+					</a>
+				</div>
+				<div id="olympic" class="col-sm-6 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/panorama/olympic_panorama.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Olympic奥林匹克国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Olympic奥林匹克国家公园</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div id="arches" class="col-sm-3 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/regular-size/arches_regular_1.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Arches拱门国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Arches拱门国家公园</span>
+						</div>
+					</a>
+				</div>
+				<div id="bryce-canyon" class="col-sm-6 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/panorama/bryce_canyon_panorama.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Bryce Canyon布莱斯峡谷国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Bryce Canyon布莱斯峡谷国家公园</span>
+						</div>
+					</a>
+				</div>
+				<div id="everglades" class="col-sm-3 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/regular-size/everglades_regular.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Everglades大沼泽国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Everglades大沼泽国家公园</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div id="crater-lake" class="col-sm-6 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/panorama/crater_lake_panorama_1.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Crater Lake陨石湖国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Crater Lake陨石湖国家公园</span>
+						</div>
+					</a>
+				</div>
+				<div id="volcanoes" class="col-sm-3 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/regular-size/volcanoes_regular_1.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Volcanoes火山国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Volcanoes火山国家公园</span>
+						</div>
+					</a>
+				</div>
+				<div id="zion" class="col-sm-3 sub-mid-content featured-trip center-align padding-5-px">
+					<img src="/resources/img/national_parks/regular-size/zion_regular.jpg">
+					<a class="view-link" target="_blank" href="">
+						<p class="text-hover-content black-transparent-bg">
+						<span class="thirdary"><b>Zion锡安国家公园</b><br><br>迪士尼乐园的标志性建筑, 你可以走进拥有蓝色尖顶的城堡并在其中就餐, 感受童话成真的感觉。</span>
+						</p>
+						<div class="trip-title black-transparent-bg text-hover-content-inverse">
+						<span class="thirdary">Zion锡安国家公园</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script type="text/javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="/js/vendor/jquery-ui-1.10.4.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script type="text/javascript" src="/js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/scrollView.js"></script>
+</body>
+</html>

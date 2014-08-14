@@ -1,0 +1,31 @@
+.text-hover-content {
+	color: white;
+	display: table;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+.text-hover-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.text-hover-content span.thirdary,
+.text-hover-content span.forthary {
+	padding-left: 20% !important;
+	padding-right: 20% !important;
+}
+a.view-link:hover .text-hover-content {
+	opacity: 1;
+}
+a.view-link:hover .text-hover-content-inverse {
+	opacity: 0;
+}
