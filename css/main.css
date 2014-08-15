@@ -29,8 +29,17 @@ body {
 .has-bottom-padding-lg {
 	padding-bottom: 20px;
 }
+.has-top-margin-max {
+	margin-top: 60px !important;
+}
 .has-top-margin-lg {
 	margin-top: 40px !important;
+}
+.has-top-margin-md {
+	margin-top: 20px !important;
+}
+.has-bottom-margin-md {
+	margin-bottom: 20px !important;
 }
 .padding-5-px {
 	padding: 5px 5px;
