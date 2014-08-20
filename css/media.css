@@ -20,7 +20,7 @@ and (max-device-width: 600px) {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.cruise-page .mobile-bg {
-		background-image: url("../resources/img/background/main_bg.jpg");
+		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
 	body.movie-page .mobile-bg {
 		background-image: url("../resources/img/background/movie_bg.jpg");
@@ -33,6 +33,15 @@ and (max-device-width: 600px) {
 	}
 	body.wedding-page .mobile-bg {
 		background-image: url("../resources/img/background/wedding_bg.jpg");
+	}
+	body.disneyland-page .mobile-bg {
+		background-image: url("../resources/img/background/disneyland_bg.jpg");
+	}
+	body.harryporter-page .mobile-bg {
+		background-image: url("../resources/img/background/harryporter_bg.jpg");
+	}
+	body.universal-page .mobile-bg {
+		background-image: url("../resources/img/background/universal_bg.jpg");
 	}
 	body.common-bg .mobile-bg {
 		position: fixed;
@@ -72,7 +81,7 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.cruise-page .mobile-bg {
-		background-image: url("../resources/img/background/main_bg.jpg");
+		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
 	body.movie-page .mobile-bg {
 		background-image: url("../resources/img/background/movie_bg.jpg");
@@ -85,6 +94,15 @@ and (max-device-width: 1024px) {
 	}
 	body.wedding-page .mobile-bg {
 		background-image: url("../resources/img/background/wedding_bg.jpg");
+	}
+	body.disneyland-page .mobile-bg {
+		background-image: url("../resources/img/background/disneyland_bg.jpg");
+	}
+	body.harryporter-page .mobile-bg {
+		background-image: url("../resources/img/background/harryporter_bg.jpg");
+	}
+	body.universal-page .mobile-bg {
+		background-image: url("../resources/img/background/universal_bg.jpg");
 	}
 	body.common-bg .mobile-bg {
 		position: fixed;
@@ -124,7 +142,7 @@ and (max-device-width: 1024px) {
 		background-image: url("../resources/img/background/food_wine_tour.jpg");
 	}
 	body.cruise-page {
-		background-image: url("../resources/img/background/main_bg.jpg");
+		background-image: url("../resources/img/background/cruise_bg.jpg");
 	}
 	body.movie-page {
 		background-image: url("../resources/img/background/movie_bg.jpg");
@@ -137,6 +155,15 @@ and (max-device-width: 1024px) {
 	}
 	body.wedding-page {
 		background-image: url("../resources/img/background/wedding_bg.jpg");
+	}
+	body.disneyland-page {
+		background-image: url("../resources/img/background/disneyland_bg.jpg");
+	}
+	body.harryporter-page {
+		background-image: url("../resources/img/background/harryporter_bg.jpg");
+	}
+	body.universal-page {
+		background-image: url("../resources/img/background/universal_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
