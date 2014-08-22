@@ -43,6 +43,21 @@ and (max-device-width: 600px) {
 	body.universal-page .mobile-bg {
 		background-image: url("../resources/img/background/universal_bg.jpg");
 	}
+	body.hollywoodstudios-page .mobile-bg {
+		background-image: url("../resources/img/background/hollywoodstudios_bg.jpg");
+	}
+	body.epcot-page .mobile-bg {
+		background-image: url("../resources/img/background/epcot_bg.jpg");
+	}
+	body.animalkingdom-page .mobile-bg {
+		background-image: url("../resources/img/background/animalkingdom_bg.jpg");
+	}
+	body.seaworld-page .mobile-bg {
+		background-image: url("../resources/img/background/seaworld_bg.jpg");
+	}
+	body.magickingdom-page .mobile-bg {
+		background-image: url("../resources/img/background/magickingdom_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -104,6 +119,21 @@ and (max-device-width: 1024px) {
 	body.universal-page .mobile-bg {
 		background-image: url("../resources/img/background/universal_bg.jpg");
 	}
+	body.hollywoodstudios-page .mobile-bg {
+		background-image: url("../resources/img/background/hollywoodstudios_bg.jpg");
+	}
+	body.epcot-page .mobile-bg {
+		background-image: url("../resources/img/background/epcot_bg.jpg");
+	}
+	body.animalkingdom-page .mobile-bg {
+		background-image: url("../resources/img/background/animalkingdom_bg.jpg");
+	}
+	body.seaworld-page .mobile-bg {
+		background-image: url("../resources/img/background/seaworld_bg.jpg");
+	}
+	body.magickingdom-page .mobile-bg {
+		background-image: url("../resources/img/background/magickingdom_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -164,6 +194,21 @@ and (max-device-width: 1024px) {
 	}
 	body.universal-page {
 		background-image: url("../resources/img/background/universal_bg.jpg");
+	}
+	body.hollywoodstudios-page {
+		background-image: url("../resources/img/background/hollywoodstudios_bg.jpg");
+	}
+	body.epcot-page {
+		background-image: url("../resources/img/background/epcot_bg.jpg");
+	}
+	body.animalkingdom-page {
+		background-image: url("../resources/img/background/animalkingdom_bg.jpg");
+	}
+	body.seaworld-page {
+		background-image: url("../resources/img/background/seaworld_bg.jpg");
+	}
+	body.magickingdom-page {
+		background-image: url("../resources/img/background/magickingdom_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
