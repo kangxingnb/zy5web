@@ -86,6 +86,10 @@ body {
 	padding-bottom: 10px;
 	margin-top: 1px;
 }
+.thirdary-lg {
+	font-size: 20px;
+	color: #FFF;
+}
 .thirdary {
 	font-size: 16px;
 	color: #FFF;
@@ -177,7 +181,9 @@ body {
 	margin: 5px 5px;
 }
 .trip-title .thirdary,
-.trip-title.thirdary {
+.trip-title .thirdary-lg,
+.trip-title.thirdary,
+.trip-title.thirdary-lg {
 	font-size: 16px;
 	color: #EEE;
 	line-height: 1.5;
