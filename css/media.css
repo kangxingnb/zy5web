@@ -58,6 +58,12 @@ and (max-device-width: 600px) {
 	body.magickingdom-page .mobile-bg {
 		background-image: url("../resources/img/background/magickingdom_bg.jpg");
 	}
+	body.cahwy1-page .mobile-bg {
+		background-image: url("../resources/img/background/cahwy1_bg.jpg");
+	}
+	body.route66-page .mobile-bg {
+		background-image: url("../resources/img/background/route66_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -134,6 +140,12 @@ and (max-device-width: 1024px) {
 	body.magickingdom-page .mobile-bg {
 		background-image: url("../resources/img/background/magickingdom_bg.jpg");
 	}
+	body.cahwy1-page .mobile-bg {
+		background-image: url("../resources/img/background/cahwy1_bg.jpg");
+	}
+	body.route66-page .mobile-bg {
+		background-image: url("../resources/img/background/route66_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -209,6 +221,12 @@ and (max-device-width: 1024px) {
 	}
 	body.magickingdom-page {
 		background-image: url("../resources/img/background/magickingdom_bg.jpg");
+	}
+	body.cahwy1-page {
+		background-image: url("../resources/img/background/cahwy1_bg.jpg");
+	}
+	body.route66-page {
+		background-image: url("../resources/img/background/route66_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
