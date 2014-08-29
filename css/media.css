@@ -64,6 +64,12 @@ and (max-device-width: 600px) {
 	body.route66-page .mobile-bg {
 		background-image: url("../resources/img/background/route66_bg.jpg");
 	}
+	body.roadtohana-page .mobile-bg {
+		background-image: url("../resources/img/background/roadtohana_bg.jpg");
+	}
+	body.monument-valley-page .mobile-bg {
+		background-image: url("../resources/img/background/monument_valley_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -146,6 +152,12 @@ and (max-device-width: 1024px) {
 	body.route66-page .mobile-bg {
 		background-image: url("../resources/img/background/route66_bg.jpg");
 	}
+	body.roadtohana-page .mobile-bg {
+		background-image: url("../resources/img/background/roadtohana_bg.jpg");
+	}
+	body.monument-valley-page .mobile-bg {
+		background-image: url("../resources/img/background/monument_valley_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -227,6 +239,12 @@ and (max-device-width: 1024px) {
 	}
 	body.route66-page {
 		background-image: url("../resources/img/background/route66_bg.jpg");
+	}
+	body.roadtohana-page {
+		background-image: url("../resources/img/background/roadtohana_bg.jpg");
+	}
+	body.monument-valley-page {
+		background-image: url("../resources/img/background/monument_valley_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
