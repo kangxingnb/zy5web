@@ -41,6 +41,12 @@ body {
 .has-bottom-margin-md {
 	margin-bottom: 20px !important;
 }
+.has-top-margin-sm {
+	margin-top: 10px !important;
+}
+.has-bottom-margin-sm {
+	margin-bottom: 10px !important;
+}
 .padding-5-px {
 	padding: 5px 5px;
 }

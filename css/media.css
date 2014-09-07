@@ -70,6 +70,21 @@ and (max-device-width: 600px) {
 	body.monument-valley-page .mobile-bg {
 		background-image: url("../resources/img/background/monument_valley_bg.jpg");
 	}
+	body.yosemite-page .mobile-bg {
+		background-image: url("../resources/img/background/yosemite_bg.jpg");
+	}
+	body.yellowstone-page .mobile-bg {
+		background-image: url("../resources/img/background/yellowstone_bg.jpg");
+	}
+	body.grand-canyon-page .mobile-bg {
+		background-image: url("../resources/img/background/grand_canyon_bg.jpg");
+	}
+	body.mount-rainier-page .mobile-bg {
+		background-image: url("../resources/img/background/mount_rainier_bg.jpg");
+	}
+	body.olympic-page .mobile-bg {
+		background-image: url("../resources/img/background/olympic_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -158,6 +173,21 @@ and (max-device-width: 1024px) {
 	body.monument-valley-page .mobile-bg {
 		background-image: url("../resources/img/background/monument_valley_bg.jpg");
 	}
+	body.yosemite-page .mobile-bg {
+		background-image: url("../resources/img/background/yosemite_bg.jpg");
+	}
+	body.yellowstone-page .mobile-bg {
+		background-image: url("../resources/img/background/yellowstone_bg.jpg");
+	}
+	body.grand-canyon-page .mobile-bg {
+		background-image: url("../resources/img/background/grand_canyon_bg.jpg");
+	}
+	body.mount-rainier-page .mobile-bg {
+		background-image: url("../resources/img/background/mount_rainier_bg.jpg");
+	}
+	body.olympic-page .mobile-bg {
+		background-image: url("../resources/img/background/olympic_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -245,6 +275,21 @@ and (max-device-width: 1024px) {
 	}
 	body.monument-valley-page {
 		background-image: url("../resources/img/background/monument_valley_bg.jpg");
+	}
+	body.yosemite-page {
+		background-image: url("../resources/img/background/yosemite_bg.jpg");
+	}
+	body.yellowstone-page {
+		background-image: url("../resources/img/background/yellowstone_bg.jpg");
+	}
+	body.grand-canyon-page {
+		background-image: url("../resources/img/background/grand_canyon_bg.jpg");
+	}
+	body.mount-rainier-page {
+		background-image: url("../resources/img/background/mount_rainier_bg.jpg");
+	}
+	body.olympic-page {
+		background-image: url("../resources/img/background/olympic_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
