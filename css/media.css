@@ -91,6 +91,9 @@ and (max-device-width: 600px) {
 	body.zion-page .mobile-bg {
 		background-image: url("../resources/img/background/zion_bg.jpg");
 	}
+	body.arches-page .mobile-bg {
+		background-image: url("../resources/img/background/arches_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -200,6 +203,9 @@ and (max-device-width: 1024px) {
 	body.zion-page .mobile-bg {
 		background-image: url("../resources/img/background/zion_bg.jpg");
 	}
+	body.arches-page .mobile-bg {
+		background-image: url("../resources/img/background/arches_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -308,6 +314,9 @@ and (max-device-width: 1024px) {
 	}
 	body.zion-page {
 		background-image: url("../resources/img/background/zion_bg.jpg");
+	}
+	body.arches-page {
+		background-image: url("../resources/img/background/arches_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
