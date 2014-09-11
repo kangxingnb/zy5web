@@ -94,6 +94,9 @@ and (max-device-width: 600px) {
 	body.arches-page .mobile-bg {
 		background-image: url("../resources/img/background/arches_bg.jpg");
 	}
+	body.everglades-page .mobile-bg {
+		background-image: url("../resources/img/background/everglades_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -206,6 +209,9 @@ and (max-device-width: 1024px) {
 	body.arches-page .mobile-bg {
 		background-image: url("../resources/img/background/arches_bg.jpg");
 	}
+	body.everglades-page .mobile-bg {
+		background-image: url("../resources/img/background/everglades_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -317,6 +323,9 @@ and (max-device-width: 1024px) {
 	}
 	body.arches-page {
 		background-image: url("../resources/img/background/arches_bg.jpg");
+	}
+	body.everglades-page {
+		background-image: url("../resources/img/background/everglades_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
