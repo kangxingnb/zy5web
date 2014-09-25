@@ -97,6 +97,12 @@ and (max-device-width: 600px) {
 	body.everglades-page .mobile-bg {
 		background-image: url("../resources/img/background/everglades_bg.jpg");
 	}
+	body.california-page .mobile-bg {
+		background-image: url("../resources/img/background/everglades_bg.jpg");
+	}
+	body.california-food-page .mobile-bg {
+		background-image: url("../resources/img/background/california_food_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -212,6 +218,12 @@ and (max-device-width: 1024px) {
 	body.everglades-page .mobile-bg {
 		background-image: url("../resources/img/background/everglades_bg.jpg");
 	}
+	body.california-page .mobile-bg {
+		background-image: url("../resources/img/background/everglades_bg.jpg");
+	}
+	body.california-food-page .mobile-bg {
+		background-image: url("../resources/img/background/california_food_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -326,6 +338,12 @@ and (max-device-width: 1024px) {
 	}
 	body.everglades-page {
 		background-image: url("../resources/img/background/everglades_bg.jpg");
+	}
+	body.california-page {
+		background-image: url("../resources/img/background/everglades_bg.jpg");
+	}
+	body.california-food-page {
+		background-image: url("../resources/img/background/california_food_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
