@@ -112,6 +112,9 @@ and (max-device-width: 600px) {
 	body.sanfrancisco-page .mobile-bg {
 		background-image: url("../resources/img/background/sf_bg.jpg");
 	}
+	body.napa-valley-page .mobile-bg {
+		background-image: url("../resources/img/background/napa_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -242,6 +245,9 @@ and (max-device-width: 1024px) {
 	body.sanfrancisco-page .mobile-bg {
 		background-image: url("../resources/img/background/sf_bg.jpg");
 	}
+	body.napa-valley-page .mobile-bg {
+		background-image: url("../resources/img/background/napa_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -371,6 +377,9 @@ and (max-device-width: 1024px) {
 	}
 	body.sanfrancisco-page {
 		background-image: url("../resources/img/background/sf_bg.jpg");
+	}
+	body.napa-valley-page {
+		background-image: url("../resources/img/background/napa_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
