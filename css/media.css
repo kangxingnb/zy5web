@@ -115,6 +115,12 @@ and (max-device-width: 600px) {
 	body.napa-valley-page .mobile-bg {
 		background-image: url("../resources/img/background/napa_bg.jpg");
 	}
+	body.las-vegas-page .mobile-bg {
+		background-image: url("../resources/img/background/lasvegas_bg.jpg");
+	}
+	body.lasvegas-hotel-page .mobile-bg {
+		background-image: url("../resources/img/background/lasvegas_hotel_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -248,6 +254,12 @@ and (max-device-width: 1024px) {
 	body.napa-valley-page .mobile-bg {
 		background-image: url("../resources/img/background/napa_bg.jpg");
 	}
+	body.las-vegas-page .mobile-bg {
+		background-image: url("../resources/img/background/lasvegas_bg.jpg");
+	}
+	body.lasvegas-hotel-page .mobile-bg {
+		background-image: url("../resources/img/background/lasvegas_hotel_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -380,6 +392,12 @@ and (max-device-width: 1024px) {
 	}
 	body.napa-valley-page {
 		background-image: url("../resources/img/background/napa_bg.jpg");
+	}
+	body.las-vegas-page {
+		background-image: url("../resources/img/background/lasvegas_bg.jpg");
+	}
+	body.lasvegas-hotel-page {
+		background-image: url("../resources/img/background/lasvegas_hotel_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
