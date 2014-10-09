@@ -121,6 +121,9 @@ and (max-device-width: 600px) {
 	body.lasvegas-hotel-page .mobile-bg {
 		background-image: url("../resources/img/background/lasvegas_hotel_bg.jpg");
 	}
+	body.lasvegas-food-page .mobile-bg {
+		background-image: url("../resources/img/background/lasvegas_food_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -260,6 +263,9 @@ and (max-device-width: 1024px) {
 	body.lasvegas-hotel-page .mobile-bg {
 		background-image: url("../resources/img/background/lasvegas_hotel_bg.jpg");
 	}
+	body.lasvegas-food-page .mobile-bg {
+		background-image: url("../resources/img/background/lasvegas_food_bg.jpg");
+	}
 	body.common-bg .mobile-bg {
 		position: fixed;
 		top: 0;
@@ -398,6 +404,9 @@ and (max-device-width: 1024px) {
 	}
 	body.lasvegas-hotel-page {
 		background-image: url("../resources/img/background/lasvegas_hotel_bg.jpg");
+	}
+	body.lasvegas-food-page {
+		background-image: url("../resources/img/background/lasvegas_food_bg.jpg");
 	}
 	body.common-bg {
 		background-repeat: no-repeat;
